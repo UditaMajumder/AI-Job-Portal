@@ -1,0 +1,549 @@
+body {
+    font-family: Arial;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* LOGO */
+.logo-main {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.logo-sub {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    margin-left: 5px;
+}
+.logo-main, .logo-sub {
+    display: fixed;
+    position: fixed;
+    top:8px;
+    
+}
+
+.logo-main{
+left: 20px;
+}
+.logo-sub {
+left: 78px;
+}
+
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* BUTTONS */
+.btn-outline {
+    border: 1px solid #4f46e5;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #4f46e5;
+}
+
+.btn-filled  {
+    background: #8fa1ff;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+
+/* BUTTONS */
+.btn-outline {
+    border: 1px solid blue;
+    padding: 5px 10px;
+}
+
+.btn-filled {
+    background: blue;
+    color: white;
+    padding: 5px 10px;
+}
+
+/* HERO SECTION */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* THIS centers vertically */
+    padding: 80px 60px;
+    min-height: 80vh; /* makes section tall like Apna */
+}
+
+/* LEFT SIDE */
+.hero-left {
+    max-width: 550px;
+}
+
+/* BIG HEADING */
+.hero-left h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* SUBTEXT */
+.hero-left p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* BUTTON */
+.hero-left button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+.hero-right img {
+    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    position: static;
+    
+}
+
+/* MODAL OVERLAY */
+.overlay {
+    display: none;
+}
+
+.overlay.active {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* MODAL BOX */
+.login-modal {
+    background: #111;
+    color: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* INPUT FIELDS */
+.login-modal input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+}
+
+/* BUTTON */
+.login-modal button {
+    width: 100%;
+    padding: 12px;
+    background: #6c7ae0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-modal button:hover {
+    background: #5a67d8;
+}
+
+/* LINKS */
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.links a {
+    color: #8fa1ff;
+    font-size: 14px;
+}
+
+
+.jobs-section {
+    padding: 40px;
+}
+
+
+ .job-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 250px));
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+    gap: 25px;              /* space between cards */
+    padding: 20px 40px;
+}
+
+
+.job-card {
+    background: #f5f5f5;
+    padding: 15px;              /* smaller padding */
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+    max-width: 250px; 
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.8);
+}
+
+button {
+    padding: 10px 15px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.get-started-btn {
+    padding: 12px 22px;
+    background: #4f46e5; /* same as signup */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.8);
+    font-size: 20px;
+}
+/* JOBS PAGE HERO FIX */
+.jobs-hero {
+    min-height: auto; /* removes big height */
+    padding: 30px 60px; /* reduce spacing */
+}
+
+/* reduce heading spacing */
+.jobs-hero h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+/* reduce paragraph spacing */
+.jobs-hero p {
+    margin-bottom: 10px;
+}
+
+/* JOBS PAGE IMAGE (RIGHT SIDE) */
+.jobs-hero .hero-right img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    height: 200px;
+}
+/* NAVBAR LAYOUT */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* NAV LINK STYLE */
+/* NAV LINKS */
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* UNDERLINE ANIMATION */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #4f46e5;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+    color: #4f46e5;
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* UNDERLINE GROWS FROM CENTER */
+.nav-links a:hover::after {
+    width: 100%;
+} 
+.nav-links a:hover {
+    color: #4f46e5;
+    text-shadow: 0 0 8px rgba(79, 70, 229, 0.4);
+}
+/* PROFILE PAGE */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   /* ✅ FIX */
+    min-height: 100vh;
+    padding-top: 40px;         /* ✅ ADD */
+    padding-bottom: 40px;      /* ✅ ADD */
+}
+
+/* CARD */
+.profile-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 380px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+
+/* INPUTS */
+.profile-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+
+.profile-card input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+/* BUTTON */
+.profile-card button {
+    width: 100%;
+    margin-top: 15px;
+}
+/* BACKGROUND */
+body {
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+/* AVATAR */
+.profile-avatar {
+    width: 110px;   /* bigger */
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 10px;  /* less gap below */
+    border: 3px solid #4f46e5;
+}
+
+/* INPUT GROUP */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ddd;
+}
+
+.input-group span {
+    margin-right: 8px;
+}
+
+/* INPUT INSIDE GROUP */
+.input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+}
+body {
+    margin: 0;
+    overflow-y: scroll;
+}
+.profile-card {
+    background: white;
+    padding: 20px;   /* slightly reduced */
+    border-radius: 15px;
+    width: 360px;    /* slightly reduced */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+
+.profile-card input {
+    padding: 8px;     /* ↓ smaller input height */
+    margin: 6px 0;    /* ↓ less spacing */
+}
+.input-group {
+    padding: 6px;     /* ↓ tighter */
+    margin: 5px 0;
+}
+.profile-card button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;   /* ↓ smaller button */
+}
+ .job-img {
+    width: 100%;
+    height: 120px;   /* smaller image */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.ai-tag {
+    color: green;
+    font-size: 12px;
+}
+/* JOB TITLE STYLE */
+.job-card h3 {
+   
+    background: linear-gradient(135deg, #4f46e5, #06b6d4);  /* same theme color */
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+
+    font-size: 16px;
+    display: inline-block;  /* important: keeps background tight */
+    margin-bottom: 8px;
+}
+ /* background: #4f46e5;  */
+ .job-card button {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.dashboard-image {
+ margin-top: 30px;
+ margin-left: 870px;
+}
+.dashboard-photo {
+    height: 250px;
+    width: 240px;
+    margin-top: -900px;
+}
+.jobs-section {
+    margin-left: 300px;
+     width: 420px;
+    padding: 25px;
+}
+/* CENTER LEFT CARDS ONLY */
+.dashboard-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers horizontally */
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* MAKE THEM BIGGER */
+.dashboard-cards .job-card {
+    width: 520px !important;   /* bigger width */
+    padding: 35px !important;  /* more space inside */
+    border-radius: 18px;       /* smoother look */
+}
+
+/* .job-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+    padding: 20px;
+} */
+ /* .job-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 30px;
+} */
+/* .job-card {
+    width: 100%;   
+} */
+/* .job-card {
+    width: 100%;
+    max-width: 280px;   /* prevents over-stretch 
+    margin: auto;       /* centers each card 
+} */
+
+.jobs-section {
+    width: 100%;
+    max-width: 1200px;   /* IMPORTANT */
+    margin: auto;        /* center the whole section */
+}
